@@ -1,6 +1,5 @@
 var things = [];
 var others = [];
-
 function thing() {
     setTimeout(function () { thing(); rea(); },5);
 }
@@ -64,6 +63,44 @@ function rea() {
                 }
             }
         }
+    }
+    if (!!document.getElementsByClassName("styles__container___3uQN5-camelCase")[0]) {
+        for (let i = 0; i < document.getElementsByClassName("styles__plateHover___1RzQy-camelCase").length; i++) {
+            document.getElementsByClassName("styles__plateHover___1RzQy-camelCase")[i].click();
+            document.getElementsByClassName("styles__container___3uQN5-camelCase")[0].click();
+        }
+    }
+    if (!!document.getElementById("restock")) {
+        document.getElementById("restock").click();
+    }
+    if (!!document.getElementsByClassName("styles__reportShopButton___2AvJR-camelCase")[0]) {
+        document.getElementsByClassName("styles__reportShopButton___2AvJR-camelCase")[0].click();
+    }
+    if (!!document.getElementsByClassName("styles__shopContainer___3p5cY-camelCase")[0]) {
+        for (let i = 0; i < document.getElementsByClassName("styles__itemContainer___34Xyx-camelCase").length; i++) {
+            document.getElementsByClassName("styles__itemContainer___34Xyx-camelCase")[i].click();
+        }
+        document.getElementsByClassName("styles__nextDayButton___8lSty-camelCase")[0].click();
+    }
+    if (!!document.getElementsByClassName("arts__regularBody___1TM6E-camelCase styles__background___2GulD-camelCase")[0]) {
+        document.getElementsByClassName("arts__regularBody___1TM6E-camelCase styles__background___2GulD-camelCase")[0].click();
+    }
+    if (!!document.getElementsByClassName("styles__blookChoice___1kAAj-camelCase")[1]) {
+        document.getElementsByClassName("styles__blookChoice___1kAAj-camelCase")[1].click();
+    }
+    if (!!document.getElementsByClassName("styles__skipButton___3Ppa_-camelCase")[0]) {
+        document.getElementsByClassName("styles__skipButton___3Ppa_-camelCase")[0].click();
+    }
+    if (!!document.getElementsByClassName("styles__remindButton___1gTTO-camelCase")[0]) {
+        document.getElementsByClassName("styles__remindButton___1gTTO-camelCase")[0].click();
+    }
+    if (!!document.getElementsByClassName("styles__factoryUpgrade___Jyl9m-camelCase")[0]) {
+        for (let i = 0; i < document.getElementsByClassName("styles__factoryUpgrade___Jyl9m-camelCase").length; i++) {
+            document.getElementsByClassName("styles__factoryUpgrade___Jyl9m-camelCase")[i].click();
+        }
+    }
+    if (!!document.getElementsByClassName("styles__modalButton___3J0_3-camelCase")[0]) {
+        document.getElementsByClassName("styles__modalButton___3J0_3-camelCase")[0].click();
     }
 }
 thing();
