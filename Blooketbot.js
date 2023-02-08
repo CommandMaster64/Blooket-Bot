@@ -47,7 +47,7 @@ function rea() {
         }
     }
     if (!!document.getElementsByClassName("styles__button___2OOoS-camelCase")[0]) {
-	//hacking passwords
+	/* hacking passwords */
         if (!others.includes(document.getElementsByClassName("styles__introHeader___Dzfym-camelCase")[0].innerText.replace("HACKING ", ""))) {
             let num = Math.floor(Math.random() * document.getElementsByClassName("styles__button___2OOoS-camelCase").length);
             document.getElementsByClassName("styles__button___2OOoS-camelCase")[num].click();
