@@ -1,28 +1,15 @@
-var things = [];
 var others = [];
 function thing() {
     setTimeout(function () { thing(); rea(); },5);
 }
 function rea() {
-	if (!!document.getElementsByClassName("styles__questionText___2MlSZ-camelCase")[0]) {
-        if (things.includes(document.getElementsByClassName("styles__questionText___2MlSZ-camelCase")[0].innerText)) {
-            for (let e = 0; e < things.length; e += 2) {
-                if (document.getElementsByClassName("styles__questionText___2MlSZ-camelCase")[0].innerText == things[e]) { 
-                    for (let i = 0; i < document.getElementsByClassName("styles__answerText___2eIBw-camelCase").length; i++) {
-                        if (document.getElementsByClassName("styles__answerText___2eIBw-camelCase")[i].innerText == things[e+1]) { 
-                            document.getElementsByClassName("styles__answerText___2eIBw-camelCase")[i].click();
-                            return undefined;
-                        }
-                    } 
-                }
+    if (!!document.getElementsByClassName("styles__answerText___2eIBw-camelCase")[0]) {
+    let correctV = Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.state.question.correctAnswers[0];
+        for (let i = 0; i < document.getElementsByClassName("styles__answerText___2eIBw-camelCase").length; i++) {
+            if (document.getElementsByClassName("styles__answerText___2eIBw-camelCase")[i].innerText == correctV) { document.getElementsByClassName("styles__answerText___2eIBw-camelCase")[i].click();
             }
-        }else {
-            things[things.length] = document.getElementsByClassName("styles__questionText___2MlSZ-camelCase")[0].innerText;
-            things[things.length] = document.getElementsByClassName("styles__answerText___2eIBw-camelCase")[0].innerText;
-            document.getElementsByClassName("styles__answerTextContainer___3YgCT-camelCase")[0].click();
-            setTimeout(function () { if (document.getElementsByClassName("styles__header___2daxi-camelCase")[0].innerText == "INCORRECT") { things[things.length-1] = document.getElementsByClassName("styles__correctAnswers___2G7Wf-camelCase")[0].innerText.replace("Correct Answer:\n", ""); } }, 800);
         }
-	}
+    }
     if (!!document.getElementsByClassName("arts__regularBody___1TM6E-camelCase")[1]) { 
         document.getElementsByClassName("arts__regularBody___1TM6E-camelCase")[1].click(); 
     }else {
