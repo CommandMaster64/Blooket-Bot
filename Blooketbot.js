@@ -1,11 +1,9 @@
-function thing() {
-    setTimeout(function () { thing(); rea(); },5);
-}
 function rea() {
     if (!!document.getElementsByClassName("styles__answerText___2eIBw-camelCase")[0]) {
     let correctV = Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.state.question.correctAnswers[0];
         for (let i = 0; i < document.getElementsByClassName("styles__answerText___2eIBw-camelCase").length; i++) {
-            if (document.getElementsByClassName("styles__answerText___2eIBw-camelCase")[i].innerText == correctV) { document.getElementsByClassName("styles__answerText___2eIBw-camelCase")[i].click();
+            if (document.getElementsByClassName("styles__answerText___2eIBw-camelCase")[i].innerText == correctV) {
+		document.getElementsByClassName("styles__answerText___2eIBw-camelCase")[i].click();
             }
         }
     }
@@ -84,4 +82,4 @@ function rea() {
         }
     }
 }
-thing();
+setInterval(rea, 5);
