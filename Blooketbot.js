@@ -1,4 +1,3 @@
-var others = [];
 function thing() {
     setTimeout(function () { thing(); rea(); },5);
 }
@@ -12,26 +11,21 @@ function rea() {
     }
     if (!!document.getElementsByClassName("arts__regularBody___1TM6E-camelCase")[1]) { 
         document.getElementsByClassName("arts__regularBody___1TM6E-camelCase")[1].click(); 
-    }else {
-        if (!!document.getElementsByClassName("styles__choice___1aMOz-camelCase")[2]) {
-            document.getElementsByClassName("styles__choice___1aMOz-camelCase")[2].click();
-        }else {
-            if (!!document.getElementsByClassName("styles__feedbackContainer___7PzgR-camelCase")[0] && document.getElementsByClassName("styles__feedbackContainer___7PzgR-camelCase")[0].innerText.includes("Click Anywhere to Go Next")) {
-                document.getElementsByClassName("styles__feedbackContainer___7PzgR-camelCase")[0].click();
-            }else {
-                if (!!document.getElementsByClassName("styles__claimText___PMybv-camelCase")[0] && !document.getElementsByClassName("styles__fishModalButton___2-VaN-camelCase")[0]) {
-                    document.getElementsByClassName("styles__pageButton___3uI22-camelCase")[0].click();
-                }else {
-                    if (!!document.getElementsByClassName("styles__fishModalButton___2-VaN-camelCase")[0]) {
-                        document.getElementsByClassName("styles__fishModalButton___2-VaN-camelCase")[0].click();
-                    }else {
-                        if (!!document.getElementsByClassName("styles__hookedText___1L1H5-camelCase")[0]) {
-                            document.getElementsByClassName("styles__pageButton___3uI22-camelCase")[0].click();
-                        }
-                    }
-                }
-            }
-        }
+    }
+    if (!!document.getElementsByClassName("styles__choice___1aMOz-camelCase")[2]) {
+        document.getElementsByClassName("styles__choice___1aMOz-camelCase")[2].click();
+    }
+    if (!!document.getElementsByClassName("styles__feedbackContainer___7PzgR-camelCase")[0] && document.getElementsByClassName("styles__feedbackContainer___7PzgR-camelCase")[0].innerText.includes("Click Anywhere to Go Next")) {
+        document.getElementsByClassName("styles__feedbackContainer___7PzgR-camelCase")[0].click();
+    }
+    if (!!document.getElementsByClassName("styles__claimText___PMybv-camelCase")[0] && !document.getElementsByClassName("styles__fishModalButton___2-VaN-camelCase")[0]) {
+        document.getElementsByClassName("styles__pageButton___3uI22-camelCase")[0].click();
+    }
+    if (!!document.getElementsByClassName("styles__fishModalButton___2-VaN-camelCase")[0]) {
+        document.getElementsByClassName("styles__fishModalButton___2-VaN-camelCase")[0].click();
+    }
+    if (!!document.getElementsByClassName("styles__hookedText___1L1H5-camelCase")[0]) {
+        document.getElementsByClassName("styles__pageButton___3uI22-camelCase")[0].click();
     }
     if (!!document.getElementsByClassName("styles__button___2OOoS-camelCase")[0]) {
 	for (let i = 0; i < document.getElementsByClassName("styles__button___2OOoS-camelCase").length; i++) {
