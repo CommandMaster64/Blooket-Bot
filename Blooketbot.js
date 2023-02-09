@@ -105,5 +105,8 @@ function rea() {
     if (!!document.getElementsByClassName("styles__wrapper___1GQZ--camelCase styles__button___2VTXx-camelCase styles__button___YXgLa-camelCase")[0]) {
         document.getElementsByClassName("styles__wrapper___1GQZ--camelCase styles__button___2VTXx-camelCase styles__button___YXgLa-camelCase")[0].click();
     }
+    if (!!document.getElementsByClassName("styles__rockButton___xdBT4-camelCase")[0]) {
+	document.getElementsByClassName("styles__rockButton___xdBT4-camelCase")[0].click();
+    }
 }
 thing();
