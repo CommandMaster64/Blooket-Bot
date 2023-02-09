@@ -34,22 +34,11 @@ function rea() {
         }
     }
     if (!!document.getElementsByClassName("styles__button___2OOoS-camelCase")[0]) {
-	/* hacking passwords */
-        if (!others.includes(document.getElementsByClassName("styles__introHeader___Dzfym-camelCase")[0].innerText.replace("HACKING ", ""))) {
-            let num = Math.floor(Math.random() * document.getElementsByClassName("styles__button___2OOoS-camelCase").length);
-            document.getElementsByClassName("styles__button___2OOoS-camelCase")[num].click();
-            setTimeout(function () { if (document.getElementsByClassName("styles__introHeader___Dzfym-camelCase")[1].innerText == "CORRECT") { others[others.length] = document.getElementsByClassName("styles__introHeader___Dzfym-camelCase")[0].innerText.replace("HACKING ", ""); others[others.length] = document.getElementsByClassName("styles__button___2OOoS-camelCase")[num].innerText; } },50);
-        }else {
-            for (let i = 0; i < others.length; i += 2) {
-                if (document.getElementsByClassName("styles__introHeader___Dzfym-camelCase")[0].innerText.replace("HACKING ", "") == others[i]) {
-                    for (let e = 0; e < document.getElementsByClassName("styles__button___2OOoS-camelCase").length; e++) {
-                        if (document.getElementsByClassName("styles__button___2OOoS-camelCase")[e].innerText == others[i+1]) {
-                            document.getElementsByClassName("styles__button___2OOoS-camelCase")[e].click();
-                        }
-                    }
-                }
-            }
-        }
+	for (let i = 0; i < document.getElementsByClassName("styles__button___2OOoS-camelCase").length; i++) {
+	    if (document.getElementsByClassName("styles__button___2OOoS-camelCase")[i].innerText == Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.state.correctPassword) {
+		document.getElementsByClassName("styles__button___2OOoS-camelCase").click();
+	    }
+	}
     }
     if (!!document.getElementsByClassName("styles__container___3uQN5-camelCase")[0]) {
         for (let i = 0; i < document.getElementsByClassName("styles__plateHover___1RzQy-camelCase").length; i++) {
