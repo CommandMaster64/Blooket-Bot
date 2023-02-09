@@ -76,7 +76,7 @@ function rea() {
     if (!!document.getElementsByClassName("styles__rockButton___xdBT4-camelCase")[0]) {
 	document.getElementsByClassName("styles__rockButton___xdBT4-camelCase")[0].click();
     }
-    if (!!Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.enemies[0]) {
+    if (!!Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.enemies) {
 	for (let i = 0; i < Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.enemies.length; i++) {
             Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.enemies[i].kill();
         }
