@@ -112,9 +112,6 @@ function rea() {
             Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.enemies[i].kill();
         }
     }
-    if (!!document.getElementsByClassName("styles__choice1___27uim-camelCase")[0]) {
-	document.getElementsByClassName("styles__choice1___27uim-camelCase")[0].click();
-    }
     if (!!document.getElementsByClassName("styles__playerContainer___3zoyU-camelCase")[0]) {
 	document.getElementsByClassName("styles__playerContainer___3zoyU-camelCase")[0].click();
     }
