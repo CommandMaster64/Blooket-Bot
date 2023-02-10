@@ -1,3 +1,34 @@
+function clickChest(x) {
+    if (x == 0) {
+    	document.getElementsByClassName("styles__choice1___27uim-camelCase")[0].click();
+    }
+    if (x == 1) {
+    	document.getElementsByClassName("styles__choice2___1aP2D-camelCase")[0].click();
+    }
+    if (x == 2) {
+    	document.getElementsByClassName("styles__choice3___2L6Q--camelCase")[0].click();
+    }
+}
+function findBestToClick() {
+    for (let i = 0; i < Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.state.choices.length; i++) {
+    	if (Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.state.choices[i].type == "multiply") {
+        	clickChest(i);
+            return true;
+        }
+        if (Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.state.choices[i].type == "take") {
+        	clickChest(i);
+            return true;
+        }
+        if (Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.state.choices[i].type == "gold") {
+        	clickChest(i);
+            return true;
+        }
+        if (Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.state.choices[i].type == "nothing") {
+        	clickChest(i);
+            return true;
+        }
+    }
+}
 function rea() {
     if (!!document.getElementsByClassName("styles__answerText___2eIBw-camelCase")[0]) {
     let correctV = Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.state.question.correctAnswers[0];
@@ -86,6 +117,9 @@ function rea() {
     }
     if (!!document.getElementsByClassName("styles__playerContainer___3zoyU-camelCase")[0]) {
 	document.getElementsByClassName("styles__playerContainer___3zoyU-camelCase")[0].click();
+    }
+    if (!!document.getElementsByClassName("styles__choice1___27uim-camelCase")[0]) {
+	findBestToClick();
     }
 }
 setInterval(rea, 5);
