@@ -105,7 +105,7 @@ function rea() {
         document.getElementsByClassName("styles__wrapper___1GQZ--camelCase styles__button___2VTXx-camelCase styles__button___YXgLa-camelCase")[0].click();
     }
     if (!!document.getElementsByClassName("styles__rockButton___xdBT4-camelCase")[0]) {
-	document.getElementsByClassName("styles__rockButton___xdBT4-camelCase")[0].click();
+	    document.getElementsByClassName("styles__rockButton___xdBT4-camelCase")[0].click();
     }
     if (!!Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.enemies) {
 	for (let i = 0; i < Object.values(document.querySelector("#app > div > div"))[1].children[1]._owner.stateNode.enemies.length; i++) {
@@ -117,6 +117,12 @@ function rea() {
     }
     if (!!document.getElementsByClassName("styles__choice1___27uim-camelCase")[0]) {
 	findBestToClick();
+    }
+    if (!!document.getElementsByClassName("arts__regularBody___1TM6E-camelCase styles__powerUpBody___33jZ--camelCase")[0]) {
+        document.getElementsByClassName("arts__regularBody___1TM6E-camelCase styles__powerUpBody___33jZ--camelCase")[0].click();
+    }
+    if (!!document.getElementsByClassName("styles__noPlayers___3RV1t-camelCase")[0]) {
+        document.getElementsByClassName("styles__noPlayers___3RV1t-camelCase")[0].click();
     }
 }
 setInterval(rea, 5);
